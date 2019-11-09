@@ -1,0 +1,19 @@
+{
+    "name": "Monocypher",
+    "description": "An easy to use, easy to deploy crypto library. It provides functions for authenticated encryption, hashing, password key derivation, key exchange, and public key signatures.",
+    "keywords":  "encryption,signing,key-exchange,password-key-derivation",
+    "version": "2.0.6",
+    "license": "CC0-1.0",
+    "homepage": "https://monocypher.org/",
+    "repository": "https://github.com/LoupVaillant/Monocypher",
+    "build": {
+        "srcDir": "src/",
+        "includeDir": "src/",
+        "flags": [
+            "-DBLAKE2_NO_UNROLLING"
+        ],
+        "libLDFMode": "off"
+    },
+    "frameworks": "*",
+    "platforms": "*"
+}
